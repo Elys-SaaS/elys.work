@@ -90,3 +90,12 @@ body {
     @apply bg-background text-foreground;
   }
 } 
+
+
+
+/**  CSS DEBUG **/
+
+/* * {
+  box-sizing: border-box;
+  outline: 3px solid limegreen !important;
+} */

@@ -2,16 +2,11 @@
 
 import React from "react";
 import Image from "next/image";
-import { Poppins } from "next/font/google";
 import { cn } from "@/app/utils";
 import ButtonPrimary from "./button-primary";
 import { Separator } from "./ui/separator";
 import { useLang } from "@/app/context/LangContext/LangContext";
-
-const pps = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500"],
-});
+import { pps } from "@/lib/fonts";
 
 const featureItem =
   "hover:bg-gray-300 p-2 rounded-md hover:text-[#333] cursor-pointer font-semibold transition duration-300";
@@ -22,12 +17,7 @@ export default function Header() {
   const { t, changeLanguage } = useLang();
 
   return (
-    <header
-      className={cn(
-        "w-screen border-b pt-1 pb-2 border-gray-500",
-        pps.className
-      )}
-    >
+    <header className={cn("border-b pt-1 pb-2 border-gray-500", pps.className)}>
       <main className="mx-auto max-w-[95rem] w-full flex justify-between items-center">
         <div>
           <Image

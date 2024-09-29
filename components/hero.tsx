@@ -1,6 +1,5 @@
 import { useLang } from "@/app/context/LangContext/LangContext";
 import { cn } from "@/app/utils";
-import { Poppins } from "next/font/google";
 import React from "react";
 import ButtonPrimary from "./button-primary";
 import Image from "next/image";
@@ -10,15 +9,12 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
-const pps = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500"],
-});
+import FillTheFormCard from "./HeroOptions";
+import { pps } from "@/lib/fonts";
 
 function Hero() {
   const { t } = useLang();
@@ -28,7 +24,7 @@ function Hero() {
   const we = t("WithElys") + " ";
 
   return (
-    <div className={cn("w-screen mt-12", pps.className)}>
+    <div className={cn(" mt-12", pps.className)}>
       <div className="mx-auto w-[49rem] text-center flex items-center justify-center flex-col">
         <motion.div
           initial={{ opacity: 0, filter: "blur(20px)", scale: 1.5 }}
@@ -77,8 +73,8 @@ function Hero() {
           </span>{" "}
           {sp.split("").map((char, index) => (
             <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0, filter: "blur(10px)" }}
+              animate={{ opacity: 1, filter: "blur(0px)" }}
               transition={{
                 duration: 0.25,
                 delay: index / 10,
@@ -97,21 +93,31 @@ function Hero() {
               className="font-bold "
             />
           </DialogTrigger>
-          <DialogContent className="sm:max-w-[425px] opacity-100 bg-gray-200">
+          <DialogContent className="sm:max-w-[800px] opacity-100 bg-gray-200">
             <DialogHeader>
               <DialogTitle className="text-black">
                 {t("SelectAnOption")}
               </DialogTitle>
               <DialogDescription>{t("SelectThatFitsYou")}</DialogDescription>
             </DialogHeader>
-
-            <DialogFooter>
-              <ButtonPrimary
-                textContent={t("FillTheForm")}
+            <div className="flex space-x-4 mx-auto">
+              <FillTheFormCard
                 onClick={() => {}}
-                className="font-bold "
-              ></ButtonPrimary>
-            </DialogFooter>
+                title={t("FillTheFormBasic") + " " + `(${t("Suggested")})`}
+                main={t("FillTheFormSuggestion")}
+                description={t("FormReason")}
+                image="https://res.cloudinary.com/dzl9yxixg/image/upload/simplechartt_sidydt_6468b0.png"
+                hoverImage="https://res.cloudinary.com/dzl9yxixg/image/upload/chartt_ulxwcj_9939d9.png"
+              />
+              <FillTheFormCard
+                onClick={() => {}}
+                title={t("BookAMeeting")}
+                main={t("BookAMeetingSuggestion")}
+                description={t("BookAMeetingReason")}
+                image="https://res.cloudinary.com/dzl9yxixg/image/upload/chat_zinhdw.png"
+                hoverImage="https://res.cloudinary.com/dzl9yxixg/image/upload/chat_zinhdw.png"
+              />
+            </div>
           </DialogContent>
         </Dialog>
       </div>
