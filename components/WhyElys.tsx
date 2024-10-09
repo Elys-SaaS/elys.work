@@ -47,7 +47,12 @@ const why: {
 function WhyElys() {
   const { t } = useLang();
   return (
-    <div className={cn("mx-auto max-w-[93rem] mt-20 w-full", pps.className)}>
+    <div
+      className={cn(
+        "mx-auto  max-w-[93rem] mt-20 w-[28rem] lg:w-full",
+        pps.className
+      )}
+    >
       <div className="text-center">
         <h1 className="text-4xl font-bold">{t("WhyElys")}</h1>
       </div>
@@ -56,7 +61,7 @@ function WhyElys() {
           {why.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center"
+              className="flex flex-col items-center justify-center text-center"
             >
               <Image src={item.icon} alt={item.name} width={200} height={200} />
 

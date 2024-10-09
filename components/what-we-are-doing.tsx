@@ -41,7 +41,12 @@ const techs: {
 function WhatWeAreDoing() {
   const { t } = useLang();
   return (
-    <div className={cn("mx-auto max-w-[93rem] mt-20 w-full", pps.className)}>
+    <div
+      className={cn(
+        "mx-auto max-w-[93rem] mt-20 w-[28rem] lg:w-full",
+        pps.className
+      )}
+    >
       <div className="text-center">
         <h1 className="text-4xl font-bold">
           Technologies We Provide Support For
@@ -63,7 +68,7 @@ function WhatWeAreDoing() {
           ))}
         </div>
       </div>
-      <div className="text-center mt-24 flex flex-col items-center justify-center">
+      <div className="text-center mx-16 lg:mx-0 mt-24 flex flex-col items-center justify-center">
         <div>
           <Image
             src={"/static/platform-support.png"}
@@ -72,7 +77,7 @@ function WhatWeAreDoing() {
             height={400}
           />
         </div>
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-3xl lg:text-4xl font-bold">
           {t("And more.. Just imagine, and we will make it happen for you!")}
         </h1>
       </div>

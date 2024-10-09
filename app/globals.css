@@ -89,7 +89,43 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  .shining-text {
+    background: linear-gradient(
+        to right,
+        var(--background),
+        var(--foreground)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 4s ease-in-out infinite alternate;
+
+  }
+  .navbar-animation {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes textShine {
+    0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+  }
 } 
+
 
 
 

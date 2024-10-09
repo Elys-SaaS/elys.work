@@ -17,8 +17,13 @@ export default function Header() {
   const { t, changeLanguage } = useLang();
 
   return (
-    <header className={cn("border-b pt-1 pb-2 border-gray-500", pps.className)}>
-      <main className="mx-auto max-w-[95rem] w-full flex justify-between items-center">
+    <header
+      className={cn(
+        "border-0 lg:border-b pt-1 pb-2 border-gray-500 z-50",
+        pps.className
+      )}
+    >
+      <main className="hidden lg:flex   mx-auto max-w-[95rem] w-full justify-between items-center">
         <div>
           <Image
             src="/static/elys-logo-white.png"

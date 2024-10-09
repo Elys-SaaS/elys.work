@@ -55,6 +55,18 @@ const tr = {
     "Ölçeklenebilir, güvenli ve iş gereksinimlerinizi karşılayacak şekilde tasarlanmış bulut tabanlı uygulamalar geliştiriyoruz.",
   "And more.. Just imagine, and we will make it happen for you!":
     "Ve daha fazlası.. Sadece hayal edin, gerçekleştirelim!",
+  "How to land?": "Nasıl başlayabilirsiniz?",
+  "With Elys it is sooo easy.": "Elys ile çok kolay.",
+  "Step 1": "Adım 1",
+  "Explain your problem": "Sorununuzu açıklayın",
+  "Step 2": "Adım 2",
+  "Let us contact you": "Bizimle iletişime geçin",
+  "Step 3": "Adım 3",
+  "And let us solve it ASAP.": "Ve en kısa sürede çözelim.",
+
+  "Done. That's it.": "İşte. Bu kadar.",
+  "It is that easy.": "Bu kadar kolay.",
+  "Let's Build Your Next SaaS Together": "Let's Build Your Next SaaS Together",
 };
 
 export default tr;

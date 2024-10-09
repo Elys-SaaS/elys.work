@@ -22,10 +22,9 @@ function Hero() {
   const fp = t("HeroFP") + " ";
   const sp = t("HeroSP") + " ";
   const we = t("WithElys") + " ";
-
   return (
     <div className={cn(" mt-12", pps.className)}>
-      <div className="mx-auto w-[49rem] text-center flex items-center justify-center flex-col">
+      <div className="mx-auto  lg:w-[49rem] text-center flex items-center justify-center flex-col">
         <motion.div
           initial={{ opacity: 0, filter: "blur(20px)", scale: 1.5 }}
           animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
@@ -42,7 +41,7 @@ function Hero() {
           />
         </motion.div>
 
-        <h1 className={"text-5xl font-bold leading-[1.6] mb-5"}>
+        <h1 className={"text-2xl lg:text-5xl font-bold leading-[1.6] mb-5"}>
           {fp.split("").map((char, index) => (
             <motion.span
               initial={{ opacity: 0, filter: "blur(10px)" }}
@@ -90,7 +89,7 @@ function Hero() {
             <ButtonPrimary
               textContent={t("FillTheForm")}
               onClick={() => {}}
-              className="font-bold "
+              className="font-bold z-10"
             />
           </DialogTrigger>
           <DialogContent className="sm:max-w-[800px] opacity-100 bg-gray-200">

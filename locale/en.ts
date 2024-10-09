@@ -55,6 +55,18 @@ const en = {
     "We develop cloud-based applications that are scalable, secure, and designed to meet your business needs.",
   "And more.. Just imagine, and we will make it happen for you!":
     "And more.. Just imagine, and we will make it happen for you!",
+
+  "How to land?": "How to land?",
+  "With Elys it is sooo easy.": "With Elys it is sooo easy.",
+  "Step 1": "Step 1",
+  "Explain your problem": "Explain your problem",
+  "Step 2": "Step 2",
+  "Let us contact you": "Let us contact you",
+  "Step 3": "Step 3",
+  "And let us solve it ASAP.": "And let us solve it ASAP.",
+  "Done. That's it.": "Done. That's it.",
+  "It is that easy.": "It is that easy.",
+  "Let's Build Your Next SaaS Together": "Let's Build Your Next SaaS Together",
 };
 
 export default en;
