@@ -43,7 +43,7 @@ function WhatWeAreDoing() {
   return (
     <div
       className={cn(
-        "mx-auto max-w-[93rem] mt-20 w-[28rem] lg:w-full",
+        "mx-auto max-w-[93rem] mt-20 w-[25rem] lg:w-full",
         pps.className
       )}
     >
@@ -62,7 +62,9 @@ function WhatWeAreDoing() {
               }`}
             >
               <Image src={item.icon} alt={item.name} width={200} height={200} />
-              <h2 className="text-2xl font-bold mt-4">{t(item.name)}</h2>
+              <h2 className="text-2xl font-bold mt-4 text-center lg:text-left">
+                {t(item.name)}
+              </h2>
               <p className="text-lg text-center mt-2">{t(item.description)}</p>
             </div>
           ))}

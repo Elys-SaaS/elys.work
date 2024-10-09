@@ -19,7 +19,7 @@ function LandingSteps() {
     <div className={cn("max-w-7xl mx-auto", pps.className)}>
       <hr className="border-b-2 border-gray-300 w-20 mx-auto my-12" />
       <div className="text-center">
-        <h1 className="text-4xl font-bold">{t("How to land?")}</h1>
+        <h1 className="text-4xl font-bold ">{t("How to land?")}</h1>
       </div>
       <div className="text-center lg:text-left text-3xl font-bold mt-12">
         <h1>{t("With Elys it is sooo easy.")}</h1>

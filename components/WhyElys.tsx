@@ -49,7 +49,7 @@ function WhyElys() {
   return (
     <div
       className={cn(
-        "mx-auto  max-w-[93rem] mt-20 w-[28rem] lg:w-full",
+        "mx-auto  max-w-[93rem] mt-20 w-[23rem] lg:w-full",
         pps.className
       )}
     >
