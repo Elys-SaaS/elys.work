@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import React from "react";
-
+export const runtime = "edge";
 function NextPage() {
   const path = usePathname();
   return (

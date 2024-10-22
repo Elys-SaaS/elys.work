@@ -1,5 +1,5 @@
 import React from "react";
-
+export const runtime = "edge";
 function NextPage() {
   return (
     <main className="bg-gray-100">
