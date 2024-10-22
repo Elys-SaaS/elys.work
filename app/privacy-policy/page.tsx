@@ -5,13 +5,23 @@ function NextPage() {
     <main className="bg-gray-100">
       <div className="max-w-7xl mx-auto p-6">
         <div className="bg-white shadow-md rounded-lg p-8">
-          <div className="flex">
+          <div className="flex items-center justify-between">
             <h1 className="text-4xl font-bold text-gray-900 mb-6">
               Privacy Policy
             </h1>
-            <a>TR</a>
+            <div>
+              <a
+                href="/privacy-policy/tr"
+                className="text-black font-bold text-4xl cursor-pointer hover:underline"
+              >
+                TR
+              </a>
+              <span className="text-gray-600 mx-4 text-4xl">/</span>
+              <a className="text-black font-bold text-4xl cursor-pointer hover:underline underline">
+                EN
+              </a>
+            </div>
           </div>
-
           <p className="text-gray-600 mb-6">
             Last Updated: <span className="font-semibold">10.22.2024</span>
           </p>
